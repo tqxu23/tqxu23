@@ -8,6 +8,35 @@ body {
   @apply bg-gray-50 text-black dark:bg-gray-900 dark:text-white;
 }
 
+
 .prose a:not(h2 a, h3 a, h4 a, h5 a, h6 a, button a) {
   @apply text-indigo-500 dark:text-indigo-400;
+}
+
+.prose h1 a,
+.prose h2 a,
+.prose h3 a,
+.prose h4 a,
+.prose h5 a,
+.prose h6 a {
+  @apply font-bold no-underline;
+}
+
+.prose p  {
+  margin-top: 0.25rem;   /* 上间距 */
+  margin-bottom: 0.25rem; /* 下间距 */
+}
+
+.prose h1,
+.prose h2 {
+  margin-top: 2.0rem;   /* 上间距 */
+  margin-bottom: 0.5rem; /* 下间距 */
+}
+
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
+  margin-top: 0.5rem;   /* 上间距 */
+  margin-bottom: 0.5rem; /* 下间距 */
 }
