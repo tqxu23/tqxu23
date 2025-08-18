@@ -13,5 +13,22 @@ export default defineContentConfig({
         layout: z.string(),
       }),
     }),
+
+    articles: defineCollection({
+      type: 'page',
+      source: 'articles/**',
+      schema: z.object({
+        layout: z.string().optional(),
+        title: z.string().optional(),
+        description: z.string().optional(),
+        seo: z
+          .object({
+            description: z.string().optional(),
+            updatedAt: z.string().optional(),
+            image: z.string().optional(),
+          })
+          .optional(),
+      }).passthrough(),
+    }),
   },
 })

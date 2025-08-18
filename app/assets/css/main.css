@@ -33,6 +33,10 @@ body {
   margin-bottom: 0.5rem; /* 下间距 */
 }
 
+.prose img {
+  margin-bottom: 0.5rem; /* 下间距 */
+}
+
 .prose h3,
 .prose h4,
 .prose h5,

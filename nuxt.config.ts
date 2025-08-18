@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxt/eslint',
     '@nuxtjs/color-mode',
+    '@nuxt/image',
   ],
 
   css: ['assets/css/main.css'],
@@ -30,4 +31,8 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-02-19',
 
   vite: { plugins: [tailwindcss()] },
+  image: {
+    quality: 65,
+    formats: ['webp','avif','jpeg'],
+  },
 })

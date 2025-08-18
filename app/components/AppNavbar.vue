@@ -7,7 +7,7 @@ const appConfig = useAppConfig();
 </script>
 
 <template>
-  <div class="flex justify-between px-4 py-4 mx-auto sm:px-8 max-w-2xl">
+  <div class="flex justify-between px-4 py-4 mx-auto sm:px-8 max-w-3xl">
     <!-- Navigation -->
     <div class="text-gray-700 dark:text-gray-200">
       <NuxtLink
@@ -18,7 +18,7 @@ const appConfig = useAppConfig();
       >{{ link.title }}</NuxtLink>
     </div>
     <!-- Social icons & Color Mode -->
-    <div class="text-gray-500 space-x-3 transition">
+    <!-- <div class="text-gray-500 space-x-3 transition">
       <a
         v-if="appConfig.socials?.twitter || appConfig.socials?.x"
         class="dark:text-gray-100 hover:text-gray-700 dark:hover:text-gray-300"
@@ -50,6 +50,6 @@ const appConfig = useAppConfig();
         <Icon class="size-5" name="i-simple-icons-bluesky" />
       </a>
       <ColorModeSwitch class="dark:text-gray-100 hover:text-gray-700 dark:hover:text-gray-300" />
-    </div>
+    </div> -->
   </div>
 </template>
